@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Заказ воды</h1>
+<a href="{% url 'order_form' %}">Подать заявку на воду </a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка</title>
+    <link href="{% static 'css/style-order.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>Заказ сформирован</h1>
+<div class="row">
+     <ol id="prop">
+        <li>Имя</li>
+        <li>Фамилия</li>
+        <li>Эл.почта</li>
+        <li>Моб.телефон</li>
+        <li>Адрес</li>
+        <li>Срок договора</li>
+        <li>Объем поставки</li>
+    </ol>
+    <ol>
+        <li>{{ k1 }}</li>
+        <li>{{ k2 }}</li>
+        <li>{{ k3 }}</li>
+        <li>{{ k4 }}</li>
+        <li>{{ k5 }}</li>
+        <li>{{ k6 }}</li>
+        <li>{{ k7 }}</li>
+
+
+    </ol>
+
+</div>
+
+
+</body>
+</html>

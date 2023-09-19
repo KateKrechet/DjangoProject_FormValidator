@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма заказа</title>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div id="block1">
+        {% for f in form %}
+            <div>{{ f.label_tag }}</div>
+            <div>{{ f }}</div>
+            <div>{{ f.errors }}</div>
+        {% endfor %}
+    </div>
+    <input type="submit" value="Завести заявку">
+</form>
+</body>
+</html>

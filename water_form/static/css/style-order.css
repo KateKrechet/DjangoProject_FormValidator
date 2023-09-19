@@ -1,0 +1,25 @@
+body {
+    background-image: url("../img/water.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+ol li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#prop li {
+    color: darkblue;
+}
